@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+
+	<title>Sticheln</title>
+	<meta name="description" content="Web Tool to take notes for the game Sticheln">
+	<meta name="author" content="Steffgr">
+
+	<link rel="stylesheet" href="src/style.css">
+
+</head>
+
+<body>
+	<script src="src/scripts.js"></script>
+	
+	<div class="control">
+	 <input type="button" value="New Game" id="newGameButton" onclick="newGame()"> 
+	 <input type="button" value="StartRound" class="playButton" id="startRoundButton" onclick="startRound()"> 
+	 <input type="button" value="Stiche" class="playButton" id="sticheButton" onclick="sendStiche()"> 
+	</div>
+	
+	<div class="score"></div>
+		
+	</div>
+	
+	
+	<div class="popUp playerCount" id="playerCountDiv">
+		<table>
+		<tr><td>How many Players?</td><td><input type="number" id="playerNumber" min="2" max="6"></td></tr>
+		<tr><td>How many Cards Max?</td><td><input type="number" id="cardNumber" min="5" max="10"></td></tr>
+		</table>
+		<input type="button" value="StartGame" onclick="initializeTable()"> 
+	</div>
+	
+	<div class="popUp newGuess" id="newGuessDiv">
+		<table>
+		<tr><td>Guess  <label id="playerLabel">Player</label>:</td>
+		<td><input type="number" id="guessNumber" min="0" max="10"></td></tr>
+		</table>
+		<input type="button" value="Go" onclick="sendGuess()"> 
+	</div>
+	
+	<div class="popUp newStiche" id="newSticheDiv">
+		<table>
+		<tr><td>Stiche  <label id="playerLabelStiche">Player</label>:</td>
+		<td><input type="number" id="sticheNumber" min="0" max="10"></td></tr>
+		</table>
+		<input type="button" value="Go" onclick="sendSticheCount()"> 
+	</div>
+	
+	<div class="currentScore" id="currentScoreID"></div>
+	
+	<script>
+		initialize()
+	</script>
+	
+</body>
+</html>

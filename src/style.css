@@ -1,0 +1,70 @@
+@font-face {
+    font-family: poppins;
+    src:url("Poppins/Poppins-Regular.ttf");
+}
+
+
+body{
+	font-family: 'poppins';
+	font-size: 2vw;
+}
+
+.popUp{
+	background-color:#eeeeee;
+	position: absolute; 
+	left: 15%; 
+	right: 0; 
+	top: 50%;
+	/*margin-left: auto; */
+	padding:5px;
+	margin-right: auto; 
+	width: 70%; /* Need a specific value to work */
+	/*max-width: 400px;*/
+	font-size: 3vw;
+}
+
+.currentScore{
+	background-color:#eeeeee;
+}
+.playButton{
+	position: absolute; 
+	left: 50%; 
+	right: 0; 
+	top: 70%;
+}
+
+input[type=number] {
+	max-width: 200px;
+	height: 50px;
+	font-size: 3vw;
+}
+
+input[type=button] {
+	width: 420px;
+	height: 150px;
+	background-color: #059ba3; 
+	border: none;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	font-size: 3vw;
+}
+
+#scoreTableID {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#scoreTableID th, td {
+	/*width: 20%;*/
+	height: 30px;
+	text-align: center;
+}
+
+#scoreTableID td:nth-child(1) {  
+	background-color: #d6d6d6;
+	font-weight: bold;
+	width: 10%px;
+	
+}
