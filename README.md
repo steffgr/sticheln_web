@@ -1,1 +1,2 @@
-# sticheln_web
+# Sticheln
+Digital notepad for the card game Sticheln.
